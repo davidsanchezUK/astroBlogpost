@@ -1,21 +1,16 @@
 ---
-const platform = "github";
-const GitHubUsername = "davidsanchezUK";
-const LinkedinUsername = "davidsanchezUK";
-const InstagramUsername = "davidgiovanni.co";
+import Social from "./social.astro";
 ---
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
 
 <footer>
-  <p>
-    Connect with me direct on <a href=`{https://www.linkedin.com/in/${LinkedinUsername}` target="_blank">Linkedin</a>
-  </p>
-  <p>
-    Learn more about my projects on <a
-      href={`https://www.${platform}.com/${GitHubUsername}`} target="_blank">{platform}</a
-    >
-  </p>
-  <p>
-    And check photos I upload on <a
-      href={`https"https://www.instagram.com/${InstagramUsername}/"`} target="_blank">Instagram</a>!
-  </p>
+  <Social platform="Linkedin" username="in/davidsanchezuk" />
+  <Social platform="Instagram" username="davidgiovanni.co" />
+  <Social platform="GitHub" username="davidsanchezUK" />
 </footer>
