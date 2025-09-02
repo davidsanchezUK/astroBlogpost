@@ -19,9 +19,22 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
-  color: red;
+  color: #2c8a1c;
 }
 /* nav styles */
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #ff9776;
+}
 
 .nav-links {
   width: 100%;
@@ -53,6 +66,13 @@ h1 {
   display: unset;
 }
 
+.skill {
+        color: #00539f;
+        font-weight: bold;
+        list-style: none;
+        text-transform: uppercase;
+      }
+
 @media screen and (min-width: 636px) {
   .nav-links {
     margin-left: 5em;
@@ -65,6 +85,10 @@ h1 {
   .nav-links a {
     display: inline-block;
     padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
   }
 
 }
